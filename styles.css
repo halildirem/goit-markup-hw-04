@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #2e2f42;
 }
 
@@ -12,7 +12,7 @@ ul {
 }
 
 header {
-  background-color: #e7e9fc;
+  background-color: #ffffff;
 }
 
 #header-section {
@@ -20,6 +20,10 @@ header {
 }
 .nav-link {
   color: #2e2f42;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
 .nav-link:focus,
@@ -30,9 +34,9 @@ header {
 .address-link {
   color: #2e2f42;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.333333333333333;
-  letter-spacing: 4%;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 .address-link:hover,
 .address-link:focus {
@@ -43,22 +47,23 @@ header {
   color: #ffffff;
   font-weight: 700;
   font-size: 56px;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   line-height: 1.071428571428571;
 }
 
+.button1 {
+  background-color: #4d5ae5;
+}
+
+.button1:hover {
+  background-color: #404BBF;}
+
 .button-text {
   color: white;
-  background-color: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 4%;
-  cursor: pointer;
-}
-.button-text:hover,
-.button-text:focus {
-  color: #404bbf;
+  letter-spacing: 0.04em;
 }
 
 #info-section {
@@ -69,7 +74,7 @@ header {
   color: #2e2f42;
   font-weight: 500;
   font-size: 20px;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
 }
 
 .mid-info-text {
@@ -77,7 +82,7 @@ header {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
 }
 
 h2 {
@@ -85,7 +90,7 @@ h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.111111111111111;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
 }
 
 h3 {
@@ -93,7 +98,7 @@ h3 {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
 }
 
 #our-team-section {
@@ -102,9 +107,9 @@ h3 {
 .staff-job {
   color: #434455;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 4%;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 
 #our-port-section {
@@ -113,9 +118,9 @@ h3 {
 .card-type-text {
   color: #2e2f42;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 4%;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 
 footer {
@@ -124,9 +129,9 @@ footer {
 .footer-text {
   color: #f4f4fd;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 4%;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 
 .logo-web-header {
@@ -135,7 +140,7 @@ footer {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.166666666666667;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
   text-decoration: none;
 }
 
@@ -145,7 +150,7 @@ footer {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.166666666666667;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
   text-decoration: none;
 }
 
@@ -155,7 +160,7 @@ footer {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.166666666666667;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
   text-decoration: none;
 }
 
@@ -165,6 +170,6 @@ footer {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.166666666666667;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
   text-decoration: none;
 }
