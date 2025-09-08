@@ -1,3 +1,22 @@
+body,
+section,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #2e2f42;
@@ -13,12 +32,16 @@ ul {
 
 header {
   background-color: #ffffff;
-  width: 1440px;
   height: 72px;
 }
 
-#header-section {
+.header-section {
   background-color: #2e2f42;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .nav-link {
   color: #2e2f42;
@@ -41,21 +64,34 @@ header {
   line-height: 1.5;
   letter-spacing: 0.04em;
 }
+
 .address-link:hover,
 .address-link:focus {
   color: #404bbf;
 }
 
-#main-title {
+.main-title {
   color: #ffffff;
   font-weight: 700;
   font-size: 56px;
   letter-spacing: 0.02em;
   line-height: 1.071428571428571;
+  text-align: center;
 }
 
 .button1 {
   background-color: #4d5ae5;
+  box-shadow: 0px 4px 4px 0px #00000026;
+  width: 169;
+  height: 56;
+  gap: 10px;
+  border-radius: 4px;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  border: none;
+  margin-top: 168px;
 }
 
 .button1:hover {
@@ -72,6 +108,17 @@ header {
 
 #info-section {
   background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+#info-section ul {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-left: 156px;
 }
 
 .mid-info-title {
@@ -79,6 +126,9 @@ header {
   font-weight: 500;
   font-size: 20px;
   letter-spacing: 0.02em;
+  flex: 1;
+  justify-content: flex-start;
+  font-style: medium;
 }
 
 .mid-info-text {
@@ -87,6 +137,7 @@ header {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  flex: 1;
 }
 
 h2 {
@@ -95,29 +146,55 @@ h2 {
   font-size: 36px;
   line-height: 1.111111111111111;
   letter-spacing: 0.02em;
+  justify-self: center;
+  font-style: bold;
 }
 
 h3 {
   color: #2e2f42;
+  display: flex;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  justify-content: center;
 }
 
 #our-team-section {
   background-color: #f4f4fd;
+  height: 732px;
 }
+
+#our-team-section ul {
+  display: flex;
+  gap: 24px;
+  cursor: pointer;
+  justify-content: center;
+}
+
 .staff-job {
   color: #434455;
+  display: flex;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  justify-content: center;
 }
 
 #our-port-section {
   background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 1000px;
+}
+
+#our-port-section ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 .card-type-text {
   color: #2e2f42;
@@ -178,26 +255,10 @@ footer {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  margin: 0;
-  padding: 0;
-}
-
 .container {
-  max-width: 1158px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 15px;
-}
-
-.header-container {
-  border-bottom: 1px solid #e7e9fc;
+  padding: 0;
 }
 
 .nav-container {
@@ -205,6 +266,7 @@ ul {
   align-items: center;
   justify-content: space-between;
   padding: 24px 0;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .nav-links {
@@ -215,4 +277,31 @@ ul {
 .address-links {
   display: flex;
   gap: 40px;
+}
+
+.portfolio-cards {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.ourport-text-box {
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+  padding: 32px 16px;
+}
+
+#our-team-section ul li {
+  margin-bottom: 32px;
+  gap: 32px;
+  box-shadow: 0px 2px 1px 0px #2e2f4214;
+  box-shadow: 0px 1px 1px 0px #2e2f4229;
+  box-shadow: 0px 1px 6px 0px #2e2f4214;
+  background-color: white;
+}
+
+.our-team-header {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 72px;
 }
