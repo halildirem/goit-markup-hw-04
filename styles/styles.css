@@ -85,13 +85,15 @@ header {
   width: 169;
   height: 56;
   gap: 10px;
+  border: none;
+  margin-top: 48px;
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
   padding-top: 16px;
   padding-right: 32px;
   padding-bottom: 16px;
   padding-left: 32px;
-  border: none;
-  margin-top: 168px;
 }
 
 .button1:hover {
@@ -188,12 +190,13 @@ h3 {
   justify-content: center;
   flex-wrap: wrap;
   height: 1000px;
+  margin-bottom: 120px;
 }
 
 #our-port-section ul {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: center;
+  gap: 24px;
   flex-wrap: wrap;
 }
 .card-type-text {
@@ -205,9 +208,17 @@ h3 {
 }
 
 footer {
+  display: flex;
   background-color: #2e2f42;
+  height: 312px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 156px;
 }
+
 .footer-text {
+  display: flex;
   color: #f4f4fd;
   font-weight: 400;
   font-size: 16px;
@@ -304,4 +315,19 @@ footer {
   justify-content: center;
   align-items: center;
   margin-bottom: 72px;
+}
+
+.ourport-header {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 72px;
+}
+
+.logo.header {
+  margin-left: 156px;
+}
+
+.logo.footer {
+  display: flex;
+  padding-bottom: 16px;
 }
