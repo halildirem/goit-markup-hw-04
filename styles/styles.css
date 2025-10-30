@@ -40,6 +40,10 @@ h3 {
   justify-content: center;
 }
 
+:hover {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 header {
   background-color: #ffffff;
   padding-left: 156px;
@@ -72,15 +76,15 @@ header {
 }
 
 .nav-link:focus::after {
-  content: ''; 
+  content: "";
   display: block;
-  width: 100%; 
-  height: 4px; 
-  background-color: #404BBF; 
-  border-radius: 2px; 
+  width: 100%;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: 1px;
 }
 
 .address-link {
@@ -89,6 +93,7 @@ header {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  font-style: normal;
 }
 
 .address-link:hover,
@@ -214,7 +219,7 @@ h2 {
 
 .portfolio-card-item {
   border: 1px solid #e7e9fc;
-overflow: hidden;
+  overflow: hidden;
 }
 
 #our-port-section {
@@ -232,9 +237,8 @@ overflow: hidden;
 }
 
 #our-port-section ul li:hover {
-  box-shadow: 0px 2px 1px 0px #2e2f4214, 
-  0px 1px 1px 0px #2e2f4229,
-  0px 1px 6px 0px #2e2f4214;;
+  box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
+    0px 1px 6px 0px #2e2f4214;
 }
 .port-img-container {
   display: flex;
@@ -246,21 +250,20 @@ overflow: hidden;
   transform: translateY(0);
 }
 
-.port-img-hover{
-display: flex;
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: #404bbf;
-transform: translateY(100%);
-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-color: #ffffff;
-text-align: center;
-align-items: center;
+.port-img-hover {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #404bbf;
+  transform: translateY(100%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
 }
-
 
 .card-type-text {
   color: #2e2f42;
@@ -272,13 +275,14 @@ align-items: center;
 
 footer {
   display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 120px;
   background-color: #2e2f42;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
   padding-left: 156px;
   padding-top: 100px;
   padding-bottom: 100px;
+  
 }
 
 .footer-text {
@@ -318,6 +322,7 @@ footer {
   line-height: 1.166666666666667;
   letter-spacing: 0.03em;
   text-decoration: none;
+  padding-bottom: 16px;
 }
 
 .logo-studio-footer {
@@ -331,6 +336,7 @@ footer {
 }
 
 .logo-footer {
+  display: block;
   padding-bottom: 16px;
 }
 
@@ -370,9 +376,8 @@ footer {
 
 #our-team-section ul li {
   gap: 32px;
-  box-shadow: 0px 2px 1px 0px #2e2f4214, 
-  0px 1px 1px 0px #2e2f4229,
-  0px 1px 6px 0px #2e2f4214;
+  box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
+    0px 1px 6px 0px #2e2f4214;
   background-color: white;
   border-radius: 0 0 4px 4px;
   cursor: pointer;
@@ -397,6 +402,37 @@ footer {
 .logo.footer {
   display: flex;
   padding-bottom: 16px;
+}
+
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-icons {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+}
+
+.footer-social-link:hover {
+background-color: #31D0AA;
+}
+
+.footer-social-text {
+  color: white;
+  font-weight: 500;
+  width: 100%;
 }
 
 .mid-info-icon {
@@ -437,7 +473,6 @@ footer {
 .our-team-icons {
   width: 16px;
   height: 16px;
-  fill: #f4f4fd;
 }
 
 .team-social-link:hover,
